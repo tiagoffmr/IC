@@ -1,0 +1,125 @@
+#bulbimg {
+	position: absolute;
+	top: 150px; 
+	left: 565px;
+	width: 150px;
+    height: 150px;
+}
+#img{
+	margin-left: auto;
+	margin-right: auto;
+}
+#slider {
+	position: absolute;
+	top: 380px; 
+	left: 560px;
+	z-index: 0;
+}
+#slider .rs-range-color  {
+    background-color: #f0dc3c;
+}
+#slider .rs-handle  {
+    background-color: #000000;
+}
+#slider .rs-border {
+    border-color: #666;
+}
+#slider .rs-bg-color {
+    background-color: #666;
+}
+#slider .rs-tooltip  {
+    top: 91%;
+	font-size: 15px;
+}
+#onoffpc {
+	position: absolute;
+	top: 435px; 
+	left: 614px;
+	z-index: 1;
+	padding: 1px;
+	border-radius: 50px;
+	background-color: #acacac;
+	border: none;
+	outline: none;
+	box-shadow: 0px 10px 37px 0px rgba(0,0,0,0.75);
+	-webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.3s;
+}
+#onoffpc:active {
+  background-color: white;
+  transform: translateY(3px);
+}
+#onoffpc img {
+	width: 50px;
+    height: 50px;
+}
+.buttonDivPC {
+	position: absolute;
+	left: 910px;
+	height: 80px;
+	border-radius: 50px;
+	background-color: #acacac;
+	border: none;
+	box-shadow: 0px 10px 37px 0px rgba(0,0,0,0.75);
+	outline: none;
+	-webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.3s;
+	display: none;
+}
+.buttonDivPC:active {
+	background-color: white;
+	transform: translateY(3px);
+}
+.buttonDivPC img {
+	height: 45px;
+}
+.buttonDivPC p {  
+	position: relative;
+	font-size: 25px;
+	margin: 0px;
+	top: 5px;
+}
+#button1PC{
+	top: 100px;
+	padding-left: 6.267%;
+	padding-right: 6.267%;
+}
+#button2PC{
+	top: 200px;
+	padding-left: 5.684%;
+	padding-right: 5.684%;
+}
+#button3PC {
+    top: 300px;
+    padding-left: 3.204%;
+    padding-right: 3.204%;
+}
+#button4PC{
+	top: 400px;
+	padding-left: 2.976%;
+	padding-right: 2.976%;
+}
+#button5PC{
+	top: 500px;
+	padding-left: 5.041%;
+	padding-right: 5.041%;
+}
+#button6PC{
+	top: 600px;
+	padding-left: 3.672%;
+	padding-right: 3.672%;
+}
+#imagemCentralPC{
+	position: absolute;
+	left: 490px;
+	top: 150px;
+	height: 300px;
+	width: 300px;
+}
+#imagemPC{
+	position: absolute;
+	left: 515px;
+    top: 220px;
+    height: 80px;
+    width: 150px;
+}

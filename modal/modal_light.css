@@ -1,0 +1,111 @@
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    margin: auto;
+    top: 0;
+    width: 1280px; /* Full width */
+    height: 720px; /* Full height */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	border-radius: 10px;
+}
+/* Modal Content */
+.modal-content {
+    position: absolute;
+    top: 185px;
+    left: 833px;
+    background-color: #a3a3a3;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 422px;
+    height: 328px;
+    border-radius: 20px;
+}
+/* The Close Button */
+.close {
+    color: #000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+#light_value {
+    position: absolute;
+    left: 129px;
+    top: 140px;
+}
+#date_start{
+	box-shadow: 0px 10px 37px 0px rgba(0,0,0,0.75);
+	border: none;
+	border-radius: 7px;
+	font-size: 19px;
+    width: 50%;
+}
+#time_start{
+	box-shadow: 0px 10px 37px 0px rgba(0,0,0,0.75);
+	border: none;
+	border-radius: 7px;
+	width: 35%;
+    font-size: 19px;
+}
+#oklight {
+    position: absolute;
+    left: 137px;
+    top: 243px;
+    height: 48px;
+    width: 142px;
+    padding: 11px;
+    border-radius: 50px;
+    background-color: white;
+    border: none;
+    box-shadow: 0px 10px 37px 0px rgba(0,0,0,0.75);
+    outline: none;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.3s;
+}
+#oklight:active {
+	background-color: white;
+	transform: translateY(3px);
+}
+.sliderL {
+    -webkit-appearance: none;
+    width: 270px;
+    height: 5px;
+    background-image: linear-gradient(to right, white, yellow);
+    outline: none;
+    -webkit-transition: 1s;
+	border-radius: 50px;
+}
+.sliderL::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: black;
+    cursor: pointer;
+	border-radius: 50px;
+}
+.sliderL::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: black;
+    cursor: pointer;
+	border-radius: 50px;
+}
+#rangevalue{
+	position: absolute;
+    left: 250px;
+    top: 163px;
+}
+p{
+	margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+}

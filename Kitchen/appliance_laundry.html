@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link href="../dist/roundslider.min.css" rel="stylesheet" />
+        <script src="../dist/roundslider.min.js"></script>
+        <script src="../script.js"></script>
+		<script src="../modal/modal.js"></script>
+		<script src="kitchen_script.js"></script>
+        <link rel="stylesheet" href="../style.css">
+		<link rel="stylesheet" href="../modal/modal_help.css">
+		<link rel="stylesheet" href="../modal/modal_blinds.css">
+		<link rel="stylesheet" href="kitchen_style.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+		<link rel="shortcut icon" type="image/png" href="../images/favicon.png"/>
+		<title>Kitchen</title>
+    </head>
+    <body>
+        <div class = "container">
+            <nav>
+                <ul>
+					<a href="../Home/homepage.html"><img id="img" src="../images/home.svg" alt="Home Button"></a>
+					<li id="clock"><a class="clock"></a></li>
+          			<div id = "RoomDivisionTitle"><h1>Kitchen</h1></div>
+          <div id="temperatureBox"></div>
+                    <li class="plus"><img id="plusimg" src="../images/plus.png" alt="Plus Button"></li>
+					<li id="temp"><a class="temp"></a></li>
+					<li class="minus"><img id="minusimg" src="../images/minus.png" alt="Minus Button"></li>
+                </ul>
+            </nav>
+			<button type="button" id="back" onclick = "window.location='../rooms.html';"><img id="backimg" src="../images/back.svg" alt="Back Button"></button>
+
+
+			<button type="button" class="buttonDiv" id="button1" onclick="window.location='kitchen.html'"><img class="button_imgs" src="../images/light-bulb.svg" alt="Light Button"><p>Light</p></button>
+			<button type="button" class="buttonDiv" id="button2" onclick="window.location=''"><img class="button_imgs"  src="../images/kitchen.svg" alt="Appliances Button"><p>Appliances</p></button>
+			<button type="button" class="buttonDiv" id="button3" onclick="window.location='kitchen_blinds.html'"><img class="button_imgs" src="../images/window1.png" alt="Blinds Button"><p>Blinds</p></button>
+
+			<button type="button" class="buttonDivApp" id="button1App" onclick="window.location='kitchen_appliances.html'"><img class="button_imgs" src="../images/coffee.svg" alt="Coffee Machine Button"><p>Coffee Machine</p></button>
+			<button type="button" class="buttonDivApp" id="button2App" onclick="window.location='appliance_dishwasher.html'"><img class="button_imgs" src="../images/dishwasher.svg" alt="Dishwasher Button"><p>Dishwasher</p></button>
+			<button type="button" class="buttonDivApp" id="button3App" onclick="window.location=''"><img class="button_imgs" src="../images/washing-machine.svg" alt="Washing Machine Button"><p>Washing Machine</p></button>
+
+			<div><img id="imagemCentral" src="../images/washing-machine.svg" alt="washing machine"></div>
+			<button type="button" id="onoffW"><img id="img" src="../images/onoff.svg" alt="Power Button"></button>
+
+			<button type="button" class="buttonDivW" id="button1W"><p>Just Water</p></button>
+			<button type="button" class="buttonDivW" id="button2W"><p>Cold</p></button>
+			<button type="button" class="buttonDivW" id="button3W"><p>Hot</p></button>
+
+			<progress value="0" max="10" id="progressBar"></progress>
+
+			<button type="button" id="help"><img id="helpimg" src="../images/help.svg" alt="Help Button"></button>
+
+			<button type="button" id="add"><img id="addimg" src="../images/add.svg" alt="Add Button"></button>
+
+			<div id="myModal" class="modal">
+
+				<div class="modal-content">
+					<span class="close">&times;</span>
+					<p>Program</p>
+					<div>
+						<form id="programlaundry" autocomplete="on">
+							<div>
+								Start:
+								<input id="date_start" type="date" title="" required="">
+								<input id="time_start" type="time" title="" required="">
+								<select id="laundry_start">
+									<option value="Just Water">Just water</option>
+									<option value="Cold">Cold</option>
+									<option value="Hot">Hot</option>
+
+								</select>
+							</div>
+							<button type="submit" id="oklaundry" disabled="" style="display: none;">OK</button>
+						</form>
+					</div>
+				</div>
+
+			</div>
+
+			<div id="helpModal" class="modal">
+
+				<div class="modal-content-help">
+					<span class="closeHelp">&times;</span>
+					<div>
+						<div class="help-label">
+							<div class="help-label-img"><img src="../images/calendar.svg"></div>
+							<div class="help-label-text">Calendar Button</div>
+						</div>
+						<div class="help-label">
+							<div class="help-label-img"><img src="../images/house.svg"></div>
+							<div class="help-label-text">Every Room Button</div>
+						</div>
+						<div class="help-label">
+							<div class="help-label-img"><img src="../images/blueprint.svg"></div>
+							<div class="help-label-text">Rooms Button</div>
+						</div>
+						<div class="help-label">
+							<div class="help-label-img"><img src="../images/eco-home.svg"></div>
+							<div class="help-label-text">Eco Mode Button</div>
+						</div>
+						<div class="help-label">
+							<div class="help-label-img"><img src="../images/add.svg"></div>
+							<div class="help-label-text">Program Button</div>
+						</div>
+						<div class="help-label">
+							<div class="help-label-img"><img src="../images/smart-home.svg"></div>
+							<div class="help-label-text">Home Button</div>
+						</div>
+						<div class="help-label">
+							<div class="help-label-img"><img src="../images/back.svg"></div>
+							<div class="help-label-text">Back Button</div>
+						</div>
+						<div class="help-label">
+							<div class="help-label-img"><img src="../images/plusB.svg"></div>
+							<div class="help-label-text">Increase Temperature</div>
+						</div>
+						<div class="help-label">
+							<div class="help-label-img"><img src="../images/minusB.svg"></div>
+							<div class="help-label-text">Decrease Temperature</div>
+						</div>
+						<div class="help-label">
+							<div class="help-label-img"><img src="../images/top.svg"></div>
+							<div class="help-label-text">Fully Open Blinds</div>
+						</div>
+						<div class="help-label">
+							<div class="help-label-img"><img src="../images/up.svg"></div>
+							<div class="help-label-text">Open Blinds</div>
+						</div>
+						<div class="help-label">
+							<div class="help-label-img"><img src="../images/down.svg"></div>
+							<div class="help-label-text">Close Blinds</div>
+						</div>
+						<div class="help-label">
+							<div class="help-label-img"><img src="../images/bottom.svg"></div>
+							<div class="help-label-text">Fully Close Blinds</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+    </body>
+</html>

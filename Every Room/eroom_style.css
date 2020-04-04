@@ -1,0 +1,63 @@
+#bulbimg {
+	position: absolute;
+	top: 150px; 
+	left: 565px;
+	width: 150px;
+    height: 150px;
+}
+#img{
+	margin-left: auto;
+	margin-right: auto;
+}
+#slider {
+	position: absolute;
+	top: 380px; 
+	left: 560px;
+	z-index: 0;
+}
+#slider .rs-range-color  {
+    background-color: #f0dc3c;
+}
+#slider .rs-handle  {
+    background-color: #000000;
+}
+#slider .rs-border {
+    border-color: #666;
+}
+#slider .rs-bg-color {
+    background-color: #666;
+}
+#slider .rs-tooltip  {
+    top: 91%;
+	font-size: 15px;
+}
+.buttonDivApp {
+	position: absolute;
+	left: 910px;
+	height: 80px;
+	width: 320px;
+	padding: 10px;
+	border-radius: 50px;
+	background-color: #acacac;
+	border: none;
+	box-shadow: 0px 10px 37px 0px rgba(0,0,0,0.75);
+	outline: none;
+	-webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.3s;
+}
+.buttonDivApp:active {
+  background-color: white;
+  transform: translateY(3px);
+}
+.buttonDivApp img {
+	padding-left: 5px;
+	height: 45px;
+	width: 45px;
+	float: left;
+}
+.buttonDivApp p {
+	position: relative;
+	font-size: 25px;
+	margin: 0px;
+	top: 5px;
+}

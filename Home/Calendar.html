@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link href="../dist/roundslider.min.css" rel="stylesheet" />
+        <script src="../dist/roundslider.min.js"></script>
+        <script src="../script.js"></script>
+        <script src="Calendar.js"></script>
+        <link rel="stylesheet" href="../style.css">
+		<link rel="stylesheet" href="../modal/modal_help.css">
+		<link rel="stylesheet" href="Calendar_style.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+		<link rel="shortcut icon" type="image/png" href="../images/favicon.png"/>
+		<title>Calendar</title>
+    </head>
+    <body>
+        <div class = "container">
+            <nav>
+                <ul>
+					<a href="../Home/homepage.html"><img id="img" src="../images/home.svg" alt="Home Button"></a>
+					<li id="clock"><a class="clock"></a></li>
+					<div id = "RoomDivisionTitle"><h1>Calendar</h1></div>
+					<div id="temperatureBox"></div>
+                    <li class="plus"><img id="plusimg" src="../images/plus.png" alt="Plus Button"></li>
+					<li id="temp"><a class="temp"></a></li>
+					<li class="minus"><img id="minusimg" src="../images/minus.png" alt="Minus Button"></li>
+                </ul>
+            </nav>
+			<button type="button" id="back" onclick = "window.location='homepage.html';"><img id="backimg" src="../images/back.svg" alt="Back Button"></button>
+            <div class = "grid-container">
+                <div class="calendar">
+					<div class="current-date">
+						<h2>December 2018</h2>
+					</div>
+
+					<div class="current-month">
+                    <ul class="week-days">
+						<li>MON</li>
+						<li>TEU</li>
+						<li>WED</li>
+						<li>THU</li>
+						<li>FRI</li>
+						<li>SAT</li>
+						<li>SUN</li>
+                    </ul>
+					</div>
+
+                    <div class="weeks">
+						<div class="first">
+							<span class="last-month">26</span>
+							<span class="last-month">27</span>
+							<span class="last-month">28</span>
+							<span class="last-month">29</span>
+							<span class="last-month">30</span>
+							<span class="dd" id="dia01">01</span>
+							<span class="dd" id="dia02">02</span>
+						</div>
+
+						<div class="second">
+							<span class="dd" id="dia03">03</span>
+							<span class="dd" id="dia04">04</span>
+							<span class="dd" id="dia05">05</span>
+							<span class="dd" id="dia06">06</span>
+							<span class="dd" id="dia07">07</span>
+							<span class="dd" id="dia08">08</span>
+							<span class="dd" id="dia09">09</span>
+						</div>
+
+						<div class="third">
+							<span class="dd" id="dia10">10</span>
+							<span class="dd" id="dia11">11</span>
+							<span class="dd" id="dia12">12</span>
+							<span class="dd" id="dia13">13</span>
+							<span class="dd" id="dia14">14</span>
+							<span class="dd" id="dia15">15</span>
+							<span class="dd" id="dia16">16</span>
+						</div>
+
+						<div class="fourth">
+							<span class="dd" id="dia17">17</span>
+							<span class="dd" id="dia18">18</span>
+							<span class="dd" id="dia19">19</span>
+							<span class="dd" id="dia20">20</span>
+							<span class="dd" id="dia21">21</span>
+							<span class="dd" id="dia22">22</span>
+							<span class="dd" id="dia23">23</span>
+						</div>
+
+						<div class="fifth">
+							<span class="dd" id="dia24">24</span>
+							<span class="dd" id="dia25">25</span>
+							<span class="dd" id="dia26">26</span>
+							<span class="dd" id="dia27">27</span>
+							<span class="dd" id="dia28">28</span>
+							<span class="dd" id="dia29">29</span>
+							<span class="dd" id="dia30">30</span>
+						</div>
+                    </div>
+                </div>
+				
+                <div class = "Events-programmed">
+                    <div class="current-date">
+                        <h2 id="todo">Events - December 2018</h2>
+                    </div>
+                    <div class="Events">
+						<table id="events">
+							<tr>
+								<th id="timeE">Time</th>
+								<th id="roomE">Room</th> 
+								<th id="thingE">Thing</th>
+								<th id="valueE">Value</th>
+								<th id="delE"></th>
+							</tr>
+						</table>
+					</div>
+                </div>
+			
+				<button type="button" id="help"><img id="helpimg" src="../images/help.svg" alt="Help Button"></button>
+				
+				<div id="helpModal" class="modal">
+
+					<div class="modal-content-help">
+						<span class="closeHelp">&times;</span>
+						<div>
+							<div class="help-label">
+								<div class="help-label-img"><img src="../images/calendar.svg"></div>
+								<div class="help-label-text">Calendar Button</div>
+							</div>
+							<div class="help-label">
+								<div class="help-label-img"><img src="../images/house.svg"></div>
+								<div class="help-label-text">Every Room Button</div>
+							</div>
+							<div class="help-label">
+								<div class="help-label-img"><img src="../images/blueprint.svg"></div>
+								<div class="help-label-text">Rooms Button</div>
+							</div>					
+							<div class="help-label">
+								<div class="help-label-img"><img src="../images/eco-home.svg"></div>
+								<div class="help-label-text">Eco Mode Button</div>
+							</div>
+							<div class="help-label">
+								<div class="help-label-img"><img src="../images/add.svg"></div>
+								<div class="help-label-text">Program Button</div>
+							</div>	
+							<div class="help-label">
+								<div class="help-label-img"><img src="../images/smart-home.svg"></div>
+								<div class="help-label-text">Home Button</div>
+							</div>
+							<div class="help-label">
+								<div class="help-label-img"><img src="../images/back.svg"></div>
+								<div class="help-label-text">Back Button</div>
+							</div>					
+							<div class="help-label">
+								<div class="help-label-img"><img src="../images/plusB.svg"></div>
+								<div class="help-label-text">Increase Temperature</div>
+							</div>					
+							<div class="help-label">
+								<div class="help-label-img"><img src="../images/minusB.svg"></div>
+								<div class="help-label-text">Decrease Temperature</div>
+							</div>				
+							<div class="help-label">
+								<div class="help-label-img"><img src="../images/top.svg"></div>
+								<div class="help-label-text">Fully Open Blinds</div>
+							</div>					
+							<div class="help-label">
+								<div class="help-label-img"><img src="../images/up.svg"></div>
+								<div class="help-label-text">Open Blinds</div>
+							</div>					
+							<div class="help-label">
+								<div class="help-label-img"><img src="../images/down.svg"></div>
+								<div class="help-label-text">Close Blinds</div>
+							</div>					
+							<div class="help-label">
+								<div class="help-label-img"><img src="../images/bottom.svg"></div>
+								<div class="help-label-text">Fully Close Blinds</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+            </div>
+    </body>
+</html>

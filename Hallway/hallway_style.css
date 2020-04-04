@@ -1,0 +1,33 @@
+#bulbimg {
+	position: absolute;
+	top: 150px; 
+	left: 565px;
+	width: 150px;
+    height: 150px;
+}
+#img{
+	margin-left: auto;
+	margin-right: auto;
+}
+#slider {
+	position: absolute;
+	top: 380px; 
+	left: 560px;
+	z-index: 0;
+}
+#slider .rs-range-color  {
+    background-color: #f0dc3c;
+}
+#slider .rs-handle  {
+    background-color: #000000;
+}
+#slider .rs-border {
+    border-color: #666;
+}
+#slider .rs-bg-color {
+    background-color: #666;
+}
+#slider .rs-tooltip  {
+    top: 91%;
+	font-size: 15px;
+}

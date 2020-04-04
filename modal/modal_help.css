@@ -1,0 +1,76 @@
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    margin: auto;
+    top: 0;
+    width: 1280px; /* Full width */
+    height: 720px; /* Full height */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	border-radius: 10px;
+}
+/* Modal Content */
+.modal-content-help {
+    position: absolute;
+    left: 20px;
+    bottom: 110px;
+    background-color: #a3a3a3;
+    margin: auto;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid #888;
+    width: 320px;
+    height: 490px;
+    border-radius: 20px;
+	padding-top
+}
+/* The Close Button */
+.closeHelp {
+	position: absolute;
+    right: 15px;
+    top: 2.5px;
+    color: #000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+	z-index: 1;
+}
+.modal-content-help .help-label {
+	position: relative;
+    width: 300px;
+	height: 36px;
+}
+
+.modal-content-help .help-label-img {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;	
+	border-radius: 50%;
+	width: 40px;
+	height: 30px;
+}
+
+.modal-content-help .help-label-img img{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 25px;
+	height: 25px;	
+}
+
+.modal-content-help .help-label .help-label-text{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 65px;
+	margin: auto;	
+    font-size: 11pt;
+    font-weight: bold;	
+	line-height: 30px;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<meta charset ="utf-8">
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="homepage.css">
+		<link rel="stylesheet" href="../modal/modal_help.css">
+		<script src="animation.js"></script>
+		<link rel="shortcut icon" type="image/png" href="../images/favicon.png"/>
+	</head>
+	<title>Home</title>
+	<body>
+		<div class="grid-container">
+			<div id="panel">
+				<div id="analog-clock">
+					<div id="clock-dial">
+						<div id="clock-dial-circle"></div>	
+						<div id="clock-dial-12" class="clock-dial-stick"></div>
+						<div id="clock-dial-1" class="clock-dial-stick"></div>
+						<div id="clock-dial-2" class="clock-dial-stick"></div>    
+						<div id="clock-dial-3" class="clock-dial-stick"></div>
+						<div id="clock-dial-4" class="clock-dial-stick"></div>
+						<div id="clock-dial-5" class="clock-dial-stick"></div>    
+						<div id="clock-dial-6" class="clock-dial-stick"></div>
+						<div id="clock-dial-7" class="clock-dial-stick"></div>
+						<div id="clock-dial-8" class="clock-dial-stick"></div>    
+						<div id="clock-dial-9" class="clock-dial-stick"></div>
+						<div id="clock-dial-10" class="clock-dial-stick"></div>
+						<div id="clock-dial-11" class="clock-dial-stick"></div>    
+					</div>
+				  
+					<div id="clock-hands">
+						<div id="hour-hand"></div>
+						<div id="min-hand"></div>
+						<div id="sec-hand"></div>
+					</div>
+				</div>
+				<div id="date">
+					<div id="monthDay"></div>
+					<div id="year"></div>
+				</div>
+			</div>
+			<div class = "panel-functions">
+				<ul>
+					<li onclick="window.location='calendar.html';"><img src="../images/calendar.svg" alt="Calendar Button"></li>
+					<li onclick="window.location='../rooms.html';"><img src="../images/blueprint.svg" alt="Rooms Button"></li>
+					<li onclick="window.location='../eco/eco.html';"><img src="../images/eco-home.svg" alt="Eco Mode Button"></li>
+					<li onclick="window.location='../Every Room/eroom.html';"><img src="../images/house.svg" alt= "General Button"></li>
+				</ul>
+			</div>
+			<div id="postIt">
+				<div class="topBar"><h1>Notes</h1></div>
+				<textarea class="textAria"></textarea>
+			</div>
+			
+			<button type="button" id="help"><img id="helpimg" src="../images/help.svg" alt="Help Button"></button>
+			
+			<div id="helpModal" class="modal">
+
+				<div class="modal-content-help">
+					<span class="closeHelp">&times;</span>
+					<div>
+						<div class="help-label">
+							<div class="help-label-img"><img src="../images/calendar.svg"></div>
+							<div class="help-label-text">Calendar Button</div>
+						</div>
+						<div class="help-label">
+							<div class="help-label-img"><img src="../images/house.svg"></div>
+							<div class="help-label-text">Every Room Button</div>
+						</div>
+						<div class="help-label">
+							<div class="help-label-img"><img src="../images/blueprint.svg"></div>
+							<div class="help-label-text">Rooms Button</div>
+						</div>					
+						<div class="help-label">
+							<div class="help-label-img"><img src="../images/eco-home.svg"></div>
+							<div class="help-label-text">Eco Mode Button</div>
+						</div>
+						<div class="help-label">
+							<div class="help-label-img"><img src="../images/add.svg"></div>
+							<div class="help-label-text">Program Button</div>
+						</div>	
+						<div class="help-label">
+							<div class="help-label-img"><img src="../images/smart-home.svg"></div>
+							<div class="help-label-text">Home Button</div>
+						</div>
+						<div class="help-label">
+							<div class="help-label-img"><img src="../images/back.svg"></div>
+							<div class="help-label-text">Back Button</div>
+						</div>					
+						<div class="help-label">
+							<div class="help-label-img"><img src="../images/plusB.svg"></div>
+							<div class="help-label-text">Increase Temperature</div>
+						</div>					
+						<div class="help-label">
+							<div class="help-label-img"><img src="../images/minusB.svg"></div>
+							<div class="help-label-text">Decrease Temperature</div>
+						</div>				
+						<div class="help-label">
+							<div class="help-label-img"><img src="../images/top.svg"></div>
+							<div class="help-label-text">Fully Open Blinds</div>
+						</div>					
+						<div class="help-label">
+							<div class="help-label-img"><img src="../images/up.svg"></div>
+							<div class="help-label-text">Open Blinds</div>
+						</div>					
+						<div class="help-label">
+							<div class="help-label-img"><img src="../images/down.svg"></div>
+							<div class="help-label-text">Close Blinds</div>
+						</div>					
+						<div class="help-label">
+							<div class="help-label-img"><img src="../images/bottom.svg"></div>
+							<div class="help-label-text">Fully Close Blinds</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</body>
+</html>

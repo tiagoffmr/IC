@@ -1,0 +1,123 @@
+.grid-container{
+  display: grid;
+  grid-template-columns: 2;
+}
+.calendar {
+  grid-column-start: 1; 
+  position: relative;
+  left: 95px;
+  top: 106.5px;
+  background: rgb(171, 171, 171);
+  border-radius: 4px;
+  box-shadow: 0px 10px 37px 0px rgba(0,0,0,0.75);
+  height: 430px;
+  perspective: 1000;
+  transition: .9s;
+  transform-style: preserve-3d;
+  width: 474px;
+  border-radius: 10px;
+}
+.current-date {
+  border-bottom: 1px solid rgba(0, 0, 0, .6);
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 40px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  border-radius: 10px 10px 0px 0px;
+}
+.current-date h1 {
+  color: white;
+  font-size: 1.4em;
+  font-weight: 300;
+}
+.week-days {
+  background-color: transparent;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  padding: 15px 40px;
+}
+.week-days li {
+  text-decoration: none;
+  list-style-type: none;
+  position: inherit;
+}
+.days {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.weeks {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  padding: 0 40px;
+}
+.weeks div {
+  display: flex;
+  font-size: 1.2em;
+  font-weight: 300;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.last-month {
+  opacity: .5;
+}
+.weeks span {
+  padding: 10px;
+}
+.weeks span.active {
+  background: white;
+  border-radius: 50%;
+}
+.weeks span.Selected {
+	background: rgb(51, 51, 51);
+    border-radius: 50%;
+    color: white;
+}
+.Events-programmed{
+  grid-column-start: 2; 
+  position: relative;
+  left: 95px;
+  top: 106.5px;
+  background: rgb(171, 171, 171);
+  border-radius: 4px;
+  box-shadow: 0px 10px 37px 0px rgba(0,0,0,0.75);
+  height: 430px;
+  perspective: 1000;
+  transition: .9s;
+  transform-style: preserve-3d;
+  width: 474px;
+  border-radius: 10px;
+}
+.Events {
+    height: 340px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+#events{
+	text-align: center;
+	line-height: 25px;
+	padding: 0px;
+	margin-left: 10px;
+	margin-top: 15px;
+}
+#timeE{
+	width: 70px;
+}
+#roomE{
+	width: 150px;
+}
+#thingE{
+	width: 80px;
+}
+#valueE{
+	width: 165px;
+}
+#delE{
+	width: 20px;
+}

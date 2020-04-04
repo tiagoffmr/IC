@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link href="../dist/roundslider.min.css" rel="stylesheet" />
+        <script src="../dist/roundslider.min.js"></script>
+        <script src="../script.js"></script>
+		<script src="../modal/modal.js"></script>
+		<script src="eroom_script.js"></script>
+        <link rel="stylesheet" href="../style.css">
+		<link rel="stylesheet" href="../modal/modal_blinds.css">
+		<link rel="stylesheet" href="../modal/modal_help.css">
+		<link rel="stylesheet" href="eroom_style.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+		<link rel="shortcut icon" type="image/png" href="../images/favicon.png"/>
+		<title>Every Room</title>
+    </head>
+    <body>
+        <div class = "container">
+            <nav>
+                <ul>
+					<a href="../Home/homepage.html"><img id="img" src="../images/home.svg" alt="Home Button"></a>
+					<li id="clock"><a class="clock"></a></li>
+					<div id="temperatureBox"></div>
+					<div id = "RoomDivisionTitle"><h1>Every Room</h1></div>
+                    <li class="plus"><img id="plusimg" src="../images/plus.png" alt="Plus Button"></li>
+					<li id="temp"><a class="temp"></a></li>
+					<li class="minus"><img id="minusimg" src="../images/minus.png" alt="Minus Button"></li>
+                </ul>
+            </nav>
+			<button type="button" id="back" onclick = "window.location='../Home/homepage.html';"><img id="backimg" src="../images/back.svg" alt="Back Button"></button>
+
+
+			<button type="button" class="buttonDiv" id="button1" onclick="window.location='eroom.html'"><img class="button_imgs" src="../images/light-bulb.svg" alt="Light Button"><p>Light</p></button>
+			<button type="button" class="buttonDiv" id="button2" onclick="window.location=''"><img class="button_imgs" src="../images/window1.png" alt="Blinds Button"><p>Blinds</p></button>
+
+			<div>
+				<div id="window"></div>
+				<button type="button" id="topButton" ><img class="blindsimg" src="../images/top.svg" alt="Top Button"></button>
+				<button type="button" id="upButton" ><img class="blindsimg" src="../images/up.svg" alt="Up Button"></button>
+				<button type="button" id="downButton"><img class="blindsimg" src="../images/down.svg" alt="Down Button"></button>
+				<button type="button" id="bottomButton" ><img class="blindsimg" src="../images/bottom.svg" alt="Bottom Button"></button>
+			</div>
+
+			<button type="button" id="add"><img id="addimg" src="../images/add.svg" alt="Add Button"></button>
+
+			<div id="myModal" class="modal">
+
+				<div class="modal-content">
+					<span class="close">&times;</span>
+					<p>Program</p>
+					<div>
+						<form id="programblinds" autocomplete="on">
+							<div>
+								Start:
+								<input id="date_start" type="date" title="" required="">
+								<input id="time_start" type="time" title="" required="">
+								<select id="blinds_start">
+									<option value="0">Open</option>
+									<option value="1">Semi Open</option>
+									<option value="2">Half</option>
+									<option value="3">Semi Closed</option>
+									<option value="4">Closed</option>
+								</select>
+							</div>
+							<button type="submit" id="okblinds" disabled="" style="display: none;">OK</button>
+						</form>
+					</div>
+				</div>
+
+			</div>
+
+			<button type="button" id="help"><img id="helpimg" src="../images/help.svg" alt="Help Button"></button>
+
+			<div id="helpModal" class="modal">
+
+				<div class="modal-content-help">
+					<span class="closeHelp">&times;</span>
+					<div>
+						<div class="help-label">
+							<div class="help-label-img"><img src="../images/calendar.svg"></div>
+							<div class="help-label-text">Calendar Button</div>
+						</div>
+						<div class="help-label">
+							<div class="help-label-img"><img src="../images/house.svg"></div>
+							<div class="help-label-text">Every Room Button</div>
+						</div>
+						<div class="help-label">
+							<div class="help-label-img"><img src="../images/blueprint.svg"></div>
+							<div class="help-label-text">Rooms Button</div>
+						</div>
+						<div class="help-label">
+							<div class="help-label-img"><img src="../images/eco-home.svg"></div>
+							<div class="help-label-text">Eco Mode Button</div>
+						</div>
+						<div class="help-label">
+							<div class="help-label-img"><img src="../images/add.svg"></div>
+							<div class="help-label-text">Program Button</div>
+						</div>
+						<div class="help-label">
+							<div class="help-label-img"><img src="../images/smart-home.svg"></div>
+							<div class="help-label-text">Home Button</div>
+						</div>
+						<div class="help-label">
+							<div class="help-label-img"><img src="../images/back.svg"></div>
+							<div class="help-label-text">Back Button</div>
+						</div>
+						<div class="help-label">
+							<div class="help-label-img"><img src="../images/plusB.svg"></div>
+							<div class="help-label-text">Increase Temperature</div>
+						</div>
+						<div class="help-label">
+							<div class="help-label-img"><img src="../images/minusB.svg"></div>
+							<div class="help-label-text">Decrease Temperature</div>
+						</div>
+						<div class="help-label">
+							<div class="help-label-img"><img src="../images/top.svg"></div>
+							<div class="help-label-text">Fully Open Blinds</div>
+						</div>
+						<div class="help-label">
+							<div class="help-label-img"><img src="../images/up.svg"></div>
+							<div class="help-label-text">Open Blinds</div>
+						</div>
+						<div class="help-label">
+							<div class="help-label-img"><img src="../images/down.svg"></div>
+							<div class="help-label-text">Close Blinds</div>
+						</div>
+						<div class="help-label">
+							<div class="help-label-img"><img src="../images/bottom.svg"></div>
+							<div class="help-label-text">Fully Close Blinds</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+    </body>
+</html>

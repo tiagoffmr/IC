@@ -1,0 +1,68 @@
+#bulbimg {
+	position: absolute;
+	top: 150px; 
+	left: 565px;
+	width: 150px;
+    height: 150px;
+}
+#img{
+	margin-left: auto;
+	margin-right: auto;
+}
+#slider {
+	position: absolute;
+	top: 380px; 
+	left: 560px;
+	z-index: 0;
+}
+#slider .rs-range-color  {
+    background-color: #f0dc3c;
+}
+#slider .rs-handle  {
+    background-color: #000000;
+}
+#slider .rs-border {
+    border-color: #666;
+}
+#slider .rs-bg-color {
+    background-color: #666;
+}
+#slider .rs-tooltip  {
+    top: 91%;
+	font-size: 15px;
+}
+.slidecontainer {
+    width: 100%;
+}
+.slider {
+	position: absolute;
+    -webkit-appearance: none;
+    width: 250px;
+    height: 5px;
+	top: 450px;
+	left: 515px;
+    background-image: linear-gradient(to right, blue, red);
+    outline: none;
+    -webkit-transition: 1s;
+	border-radius: 50px;
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: black;
+    cursor: pointer;
+	border-radius: 50px;
+}
+.slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: black;
+    cursor: pointer;
+	border-radius: 50px;
+}
+ #valuePosition{
+	position: absolute;
+	left: 620px;
+	top: 480px;
+ }

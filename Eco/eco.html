@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="../script.js"></script>
+        <script src="eco_script.js"></script>
+        <link rel="stylesheet" href="../style.css">
+		<link rel="stylesheet" href="../modal/modal_help.css">
+        <link rel="stylesheet" href="eco_style.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+		<link rel="shortcut icon" type="images/png" href="../images/favicon.png"/>
+		<title>Modo Eco</title>
+    </head>
+    <body>
+        <div class = "container">
+            <nav>
+                <ul>
+					<a href="../Home/homepage.html"><img id="img" src="../images/home.svg" alt="Home Button"></a>
+					<li id="clock"><a class="clock"></a></li>
+					<div id="temperatureBox"></div>
+					<div id = "RoomDivisionTitle"><h1>Eco</h1></div>
+                    <li class="plus"><img id="plusimg" src="../images/plus.png" alt="Plus Button"></li>
+					<li id="temp"><a class="temp"></a></li>
+					<li class="minus"><img id="minusimg" src="../images/minus.png" alt="Minus Button"></li>
+                </ul>
+            </nav>
+
+			<button type="button" id="back" onclick = "window.location='../Home/homepage.html';"><img id="backimg" src="../images/back.svg" alt="Back Button"></button>
+
+			<div id="plan">
+
+				<div class="room" id = "kitchen">
+					<img id="EcoImage1" src="../images/organic.svg">Kitchen</div>
+
+				<div class="room" id = "foyer">
+					<img id="EcoImage2" src="../images/organic.svg">Foyer</div>
+
+				<div class="room" id = "living_room">
+          			<img id="EcoImage3" src="../images/organic.svg">Living Room</div>
+
+				<div class="room" id = "master_room">
+          			<img id="EcoImage4" src="../images/organic.svg">Master Room</div>
+
+				<div class="room" id = "WC1">
+          			<img id="EcoImage5" src="../images/organic.svg">WC1</div>
+
+				<div class="room" id = "hallway">
+          			<img id="EcoImage6" src="../images/organic.svg">Hallway</div>
+
+				<div class="room" id = "WC3">
+          			<img id="EcoImage7" src="../images/organic.svg">WC3</div>
+
+				<div class="room" id = "study">
+          			<img id="EcoImage8" src="../images/organic.svg">Study</div>
+
+				<div class="room" id = "room1">
+          			<img id="EcoImage9" src="../images/organic.svg">Room 1</div>
+
+				<div class="room" id = "WC2">
+          			<img id="EcoImage10" src="../images/organic.svg">WC2</div>
+
+				<div class="room" id = "room2">
+          			<img id="EcoImage11" src="../images/organic.svg">Room 2</div>
+			</div>
+			
+			<button type="button" id="help"><img id="helpimg" src="../images/help.svg" alt="Help Button"></button>
+
+			<div id="helpModal" class="modal">
+
+				<div class="modal-content-help">
+					<span class="closeHelp">&times;</span>
+					<div>
+						<div class="help-label">
+							<div class="help-label-img"><img src="../images/calendar.svg"></div>
+							<div class="help-label-text">Calendar Button</div>
+						</div>
+						<div class="help-label">
+							<div class="help-label-img"><img src="../images/house.svg"></div>
+							<div class="help-label-text">Every Room Button</div>
+						</div>
+						<div class="help-label">
+							<div class="help-label-img"><img src="../images/blueprint.svg"></div>
+							<div class="help-label-text">Rooms Button</div>
+						</div>
+						<div class="help-label">
+							<div class="help-label-img"><img src="../images/eco-home.svg"></div>
+							<div class="help-label-text">Eco Mode Button</div>
+						</div>
+						<div class="help-label">
+							<div class="help-label-img"><img src="../images/add.svg"></div>
+							<div class="help-label-text">Program Button</div>
+						</div>
+						<div class="help-label">
+							<div class="help-label-img"><img src="../images/smart-home.svg"></div>
+							<div class="help-label-text">Home Button</div>
+						</div>
+						<div class="help-label">
+							<div class="help-label-img"><img src="../images/back.svg"></div>
+							<div class="help-label-text">Back Button</div>
+						</div>
+						<div class="help-label">
+							<div class="help-label-img"><img src="../images/plusB.svg"></div>
+							<div class="help-label-text">Increase Temperature</div>
+						</div>
+						<div class="help-label">
+							<div class="help-label-img"><img src="../images/minusB.svg"></div>
+							<div class="help-label-text">Decrease Temperature</div>
+						</div>
+						<div class="help-label">
+							<div class="help-label-img"><img src="../images/top.svg"></div>
+							<div class="help-label-text">Fully Open Blinds</div>
+						</div>
+						<div class="help-label">
+							<div class="help-label-img"><img src="../images/up.svg"></div>
+							<div class="help-label-text">Open Blinds</div>
+						</div>
+						<div class="help-label">
+							<div class="help-label-img"><img src="../images/down.svg"></div>
+							<div class="help-label-text">Close Blinds</div>
+						</div>
+						<div class="help-label">
+							<div class="help-label-img"><img src="../images/bottom.svg"></div>
+							<div class="help-label-text">Fully Close Blinds</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			
+			<button type="button" id="EcoButton"><img src="../images/organic2.svg" id="Modo_Eco" alt="Eco Button"></button>
+			<p id="all">All<p>
+        </div>
+    </body>
+</html>

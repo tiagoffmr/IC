@@ -1,0 +1,125 @@
+#bulbimg {
+	position: absolute;
+	top: 150px; 
+	left: 565px;
+	width: 150px;
+    height: 150px;
+}
+#img{
+	margin-left: auto;
+	margin-right: auto;
+}
+#slider {
+	position: absolute;
+	top: 380px; 
+	left: 560px;
+	z-index: 0;
+}
+#slider .rs-range-color  {
+    background-color: #f0dc3c;
+}
+#slider .rs-handle  {
+    background-color: #000000;
+}
+#slider .rs-border {
+    border-color: #666;
+}
+#slider .rs-bg-color {
+    background-color: #666;
+}
+#slider .rs-tooltip  {
+    top: 91%;
+	font-size: 15px;
+}
+#onofftv {
+	position: absolute;
+	top: 435px; 
+	left: 614px;
+	z-index: 1;
+	padding: 1px;
+	border-radius: 50px;
+	background-color: #acacac;
+	border: none;
+	outline: none;
+	box-shadow: 0px 10px 37px 0px rgba(0,0,0,0.75);
+	-webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.3s;
+}
+#onofftv:active {
+	transform: translateY(3px);
+	background-color: white;
+}
+#onofftv img {
+	width: 50px;
+    height: 50px;
+}
+.buttonDivTV {
+	position: absolute;
+	left: 910px;
+	height: 80px;
+	border-radius: 50px;
+	background-color: #acacac;
+	border: none;
+	box-shadow: 0px 10px 37px 0px rgba(0,0,0,0.75);
+	outline: none;
+	-webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.3s;
+	display: none;
+}
+.buttonDivTV:active {
+	background-color: white;
+	transform: translateY(3px);
+}
+.buttonDivTV img {
+	height: 45px;
+}
+.buttonDivTV p {
+	position: relative;
+	font-size: 25px;
+	margin: 0px;
+	top: 5px;
+}
+#button1TV{
+	top: 100px;
+	padding-left: 2.502%;
+	padding-right: 2.502%;
+}
+#button2TV{
+	top: 200px;
+	padding-left: 5.812%;
+	padding-right: 5.812%;
+}
+#button3TV{
+	top: 300px;
+	padding-left: 8.416%;
+	padding-right: 8.416%;
+}
+#button4TV{
+	top: 400px;
+	padding-left: 9.207%;
+	padding-right: 9.207%;
+}
+#button5TV{
+	top: 500px;
+	padding-left: 5.041%;
+	padding-right: 5.041%;
+}
+#button6TV{
+	top: 600px;
+	padding-left: 3.672%;
+	padding-right: 3.672%;
+}
+#imagemCentralTV{
+	position: absolute;
+	left: 490px;
+	top: 150px;
+	height: 300px;
+	width: 300px;
+}
+#imagemTV{
+	position: absolute;
+	left: 500px;
+	top: 195px; 
+	height: 170px; 
+	width: 280px;
+}
